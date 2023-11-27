@@ -27,7 +27,7 @@ namespace chempionat
 
         private void Spisok_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
         private void Input_TextChanged(object sender, TextChangedEventArgs e)
@@ -37,7 +37,11 @@ namespace chempionat
 
         private void But1_Click(object sender, RoutedEventArgs e)
         {
-
+            string text = Input.Text;
+            if (text != "")
+            {
+                Spisok.Items.Add(text);
+            }
         }
 
         private void But2_Click(object sender, RoutedEventArgs e)
